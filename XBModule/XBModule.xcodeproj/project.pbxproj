@@ -14,6 +14,8 @@
 		A87C9FA12575417A00E2A63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87C9FA02575417A00E2A63E /* Assets.xcassets */; };
 		A87C9FA42575417A00E2A63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87C9FA22575417A00E2A63E /* LaunchScreen.storyboard */; };
 		A87C9FA72575417A00E2A63E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C9FA62575417A00E2A63E /* main.m */; };
+		A87C9FED257542D400E2A63E /* XBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C9FEA257542D400E2A63E /* XBFileManager.m */; };
+		A87C9FEE257542D400E2A63E /* NSString+FilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C9FEC257542D400E2A63E /* NSString+FilePath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		A87C9FA32575417A00E2A63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A87C9FA52575417A00E2A63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87C9FA62575417A00E2A63E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A87C9FE9257542D400E2A63E /* NSString+FilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FilePath.h"; sourceTree = "<group>"; };
+		A87C9FEA257542D400E2A63E /* XBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBFileManager.m; sourceTree = "<group>"; };
+		A87C9FEB257542D400E2A63E /* XBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBFileManager.h; sourceTree = "<group>"; };
+		A87C9FEC257542D400E2A63E /* NSString+FilePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilePath.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		A87C9F932575417800E2A63E /* XBModule */ = {
 			isa = PBXGroup;
 			children = (
+				A87C9FE8257542D400E2A63E /* XBFileManager */,
 				A87C9F942575417800E2A63E /* AppDelegate.h */,
 				A87C9F952575417800E2A63E /* AppDelegate.m */,
 				A87C9F972575417800E2A63E /* SceneDelegate.h */,
@@ -74,6 +81,17 @@
 				A87C9FA62575417A00E2A63E /* main.m */,
 			);
 			path = XBModule;
+			sourceTree = "<group>";
+		};
+		A87C9FE8257542D400E2A63E /* XBFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				A87C9FEB257542D400E2A63E /* XBFileManager.h */,
+				A87C9FEA257542D400E2A63E /* XBFileManager.m */,
+				A87C9FE9257542D400E2A63E /* NSString+FilePath.h */,
+				A87C9FEC257542D400E2A63E /* NSString+FilePath.m */,
+			);
+			path = XBFileManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +167,8 @@
 				A87C9F962575417800E2A63E /* AppDelegate.m in Sources */,
 				A87C9FA72575417A00E2A63E /* main.m in Sources */,
 				A87C9F992575417800E2A63E /* SceneDelegate.m in Sources */,
+				A87C9FEE257542D400E2A63E /* NSString+FilePath.m in Sources */,
+				A87C9FED257542D400E2A63E /* XBFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +312,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XBModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +331,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XBModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
