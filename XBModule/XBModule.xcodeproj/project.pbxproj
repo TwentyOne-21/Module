@@ -16,9 +16,14 @@
 		A87C9FA72575417A00E2A63E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C9FA62575417A00E2A63E /* main.m */; };
 		A87C9FED257542D400E2A63E /* XBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C9FEA257542D400E2A63E /* XBFileManager.m */; };
 		A87C9FEE257542D400E2A63E /* NSString+FilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C9FEC257542D400E2A63E /* NSString+FilePath.m */; };
+		B1456F55258C9330002DCDBE /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1456F53258C932F002DCDBE /* 1.mp4 */; };
+		B1456F56258C9330002DCDBE /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1456F54258C9330002DCDBE /* 2.mp4 */; };
+		C0B2C14468A0468F16F69CAC /* Pods_XBModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632D47C96EFE79A0491C15C6 /* Pods_XBModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		632D47C96EFE79A0491C15C6 /* Pods_XBModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F5D751D76D833779E91C20 /* Pods-XBModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBModule.release.xcconfig"; path = "Target Support Files/Pods-XBModule/Pods-XBModule.release.xcconfig"; sourceTree = "<group>"; };
 		A87C9F912575417800E2A63E /* XBModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87C9F942575417800E2A63E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A87C9F952575417800E2A63E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +40,9 @@
 		A87C9FEA257542D400E2A63E /* XBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBFileManager.m; sourceTree = "<group>"; };
 		A87C9FEB257542D400E2A63E /* XBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBFileManager.h; sourceTree = "<group>"; };
 		A87C9FEC257542D400E2A63E /* NSString+FilePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilePath.m"; sourceTree = "<group>"; };
+		B1456F53258C932F002DCDBE /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		B1456F54258C9330002DCDBE /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
+		E7D8C218BA09F2E82256FE35 /* Pods-XBModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBModule.debug.xcconfig"; path = "Target Support Files/Pods-XBModule/Pods-XBModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B2C14468A0468F16F69CAC /* Pods_XBModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2346DE76D9912C6CF1FBB4C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7D8C218BA09F2E82256FE35 /* Pods-XBModule.debug.xcconfig */,
+				75F5D751D76D833779E91C20 /* Pods-XBModule.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A87C9F882575417800E2A63E = {
 			isa = PBXGroup;
 			children = (
 				A87C9F932575417800E2A63E /* XBModule */,
 				A87C9F922575417800E2A63E /* Products */,
+				2346DE76D9912C6CF1FBB4C1 /* Pods */,
+				C61942A6F6380C517CF13C41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +87,8 @@
 		A87C9F932575417800E2A63E /* XBModule */ = {
 			isa = PBXGroup;
 			children = (
+				B1456F53258C932F002DCDBE /* 1.mp4 */,
+				B1456F54258C9330002DCDBE /* 2.mp4 */,
 				A87C9FE8257542D400E2A63E /* XBFileManager */,
 				A87C9F942575417800E2A63E /* AppDelegate.h */,
 				A87C9F952575417800E2A63E /* AppDelegate.m */,
@@ -94,6 +116,14 @@
 			path = XBFileManager;
 			sourceTree = "<group>";
 		};
+		C61942A6F6380C517CF13C41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				632D47C96EFE79A0491C15C6 /* Pods_XBModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,6 +131,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A87C9FAA2575417A00E2A63E /* Build configuration list for PBXNativeTarget "XBModule" */;
 			buildPhases = (
+				3C56FB85FA7B11733BED88BC /* [CP] Check Pods Manifest.lock */,
 				A87C9F8D2575417800E2A63E /* Sources */,
 				A87C9F8E2575417800E2A63E /* Frameworks */,
 				A87C9F8F2575417800E2A63E /* Resources */,
@@ -150,13 +181,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1456F56258C9330002DCDBE /* 2.mp4 in Resources */,
 				A87C9FA42575417A00E2A63E /* LaunchScreen.storyboard in Resources */,
+				B1456F55258C9330002DCDBE /* 1.mp4 in Resources */,
 				A87C9FA12575417A00E2A63E /* Assets.xcassets in Resources */,
 				A87C9F9F2575417800E2A63E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C56FB85FA7B11733BED88BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XBModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A87C9F8D2575417800E2A63E /* Sources */ = {
@@ -308,10 +366,12 @@
 		};
 		A87C9FAB2575417A00E2A63E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D8C218BA09F2E82256FE35 /* Pods-XBModule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PLHHSGX5QS;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XBModule/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -327,10 +387,12 @@
 		};
 		A87C9FAC2575417A00E2A63E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75F5D751D76D833779E91C20 /* Pods-XBModule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PLHHSGX5QS;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XBModule/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
